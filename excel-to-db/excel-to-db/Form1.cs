@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace excel_to_db
 {
-    public partial class Form1 : Form
+    public partial class MergingTools : Form
     {
-        public Form1()
+        public MergingTools()
         {
             InitializeComponent();
         }
