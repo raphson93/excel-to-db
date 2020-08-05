@@ -32,6 +32,7 @@
             this.btnLoad = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnExport = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -71,11 +72,22 @@
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(36, 360);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Insert DB";
+            // 
             // MergingTools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(364, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnLoad);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Label label2;
     }
 }
 
