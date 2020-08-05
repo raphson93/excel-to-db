@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excel-to-db", "excel-to-db\excel-to-db.csproj", "{A3E8DA6C-4B14-430F-922B-FBC47EFEF979}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelPresenter", "ExcelPresenter\ExcelPresenter.csproj", "{95621032-393C-4B74-9108-93CF0D705A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWorker", "ExcelWorker\ExcelWorker.csproj", "{CDE0BBD8-5E98-47EE-B208-265926512C83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A3E8DA6C-4B14-430F-922B-FBC47EFEF979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3E8DA6C-4B14-430F-922B-FBC47EFEF979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3E8DA6C-4B14-430F-922B-FBC47EFEF979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95621032-393C-4B74-9108-93CF0D705A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95621032-393C-4B74-9108-93CF0D705A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95621032-393C-4B74-9108-93CF0D705A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95621032-393C-4B74-9108-93CF0D705A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE0BBD8-5E98-47EE-B208-265926512C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE0BBD8-5E98-47EE-B208-265926512C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE0BBD8-5E98-47EE-B208-265926512C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE0BBD8-5E98-47EE-B208-265926512C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
