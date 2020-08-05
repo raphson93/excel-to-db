@@ -2,6 +2,9 @@
 using System;
 using System.IO;
 using System.Linq;
+using EntityDataContext;
+using ExcelWorker;
+using Microsoft.Extensions.Hosting;
 
 namespace ExcelWorkerMain
 {
@@ -35,5 +38,9 @@ namespace ExcelWorkerMain
             excelPackage.Save();
         }
 
+        public void TestDatabaseConnection(EntityDatabaseContext databaseContext)
+        {
+
+        }
     }
 }

@@ -1,8 +1,7 @@
 ﻿using ExcelPresenter.Model;
 using ExcelPresenter.ViewModel;
-using ExcelWorkerMain;
+using Microsoft.Data.SqlClient;
 using Microsoft.Win32;
-using System.IO;
 using System.Linq;
 using System.Windows;
 
@@ -30,19 +29,17 @@ namespace ExcelPresenter
                 Filter = "Excel Files (CSV,XLSX,GIF)|*.csv;*.xlsx"
             };
 
-            var excelWorker = new ExcelWorker();
+            //var excelWorker = new ExcelWorker();
 
             var result = openFileDialog.ShowDialog();
+            if (result != true) return;
 
-            if (result == true)
+            foreach (var safeFileName in openFileDialog.SafeFileNames)
             {
-                foreach (var safeFileName in openFileDialog.SafeFileNames)
-                {
-                    excelWorker.ReadExcel(openFileDialog.FileName);
-                    if (ViewModel.Excels.Any(excel => excel.FileName == safeFileName)) continue;
+                //excelWorker.ReadExcel(openFileDialog.FileName);
+                if (ViewModel.Excels.Any(excel => excel.FileName == safeFileName)) continue;
 
-                    ViewModel.Excels.Add(new Excel { FileName = safeFileName });
-                }
+                ViewModel.Excels.Add(new Excel { FileName = safeFileName });
             }
         }
     }
