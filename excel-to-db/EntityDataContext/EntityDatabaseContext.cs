@@ -18,7 +18,7 @@ namespace EntityDataContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=rotodb.c6nitrkqqrja.us-east-2.rds.amazonaws.com;Database=cls-db;Trusted_Connection=True;User ID=admin;Password=root12345;");
+                "Server=rotodb.c6nitrkqqrja.us-east-2.rds.amazonaws.com;Database=cls-db;User ID=admin;Password=root12345;");
             if (!optionsBuilder.IsConfigured)
             {
 
